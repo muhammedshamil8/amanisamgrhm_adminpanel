@@ -1,6 +1,7 @@
-import Logo from "./assets/logo.png";
-import AppScreenshot from "./assets/amani.jpeg";
-import GooglePlay from "./assets/google-play-badge.png";
+import Logo from "@/assets/logo.png";
+import AppScreenshot from "@/assets/amani.jpeg";
+import GooglePlay from "@/assets/google-play-badge.png";
+import Footer from "../components/Footer";
 
 function App() {
   return (
@@ -84,32 +85,7 @@ function App() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-100 py-6">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-4 md:mb-0">
-              <img src={Logo} alt="Qurhan Logo" className="h-8" />
-            </div>
-            <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-              <a href="/privacy" className="text-gray-600 hover:text-blue-500">
-                Privacy Policy
-              </a>
-              <a href="/terms" className="text-gray-600 hover:text-blue-500">
-                Terms of Service
-              </a>
-              <a href="/contact" className="text-gray-600 hover:text-blue-500">
-                Contact Us
-              </a>
-              <a href="/about" className="text-gray-600 hover:text-blue-500">
-                About
-              </a>
-            </div>
-          </div>
-          <div className="mt-4 text-center text-gray-500 text-sm">
-            © {new Date().getFullYear()} Qurhan App. All rights reserved.
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
