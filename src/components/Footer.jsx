@@ -13,9 +13,9 @@ export default function Footer() {
                         <img src={Logo} onClick={() => navigate('/')} alt="Qurhan Logo" className="h-8 cursor-pointer hover:scale-[1.1] transition-all ease-in-out" />
                     </div>
                     <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-                        <button onClick={() => navigate('/privacy-policy')} className="text-gray-600 hover:text-blue-500">Privacy Policy</button>
-                        <button onClick={() => navigate('/terms-of-service')} className="text-gray-600 hover:text-blue-500">Terms of Service</button>
-                        <button onClick={() => navigate('/contact')} className="text-gray-600 hover:text-blue-500">Contact Us</button>
+                        <button onClick={() => navigate('/privacy-policy')} className="text-gray-600 hover:text-blue-500 cursor-pointer">Privacy Policy</button>
+                        <button onClick={() => navigate('/terms-of-service')} className="text-gray-600 hover:text-blue-500 cursor-pointer">Terms of Service</button>
+                        <button onClick={() => navigate('/contact')} className="text-gray-600 hover:text-blue-500 cursor-pointer">Contact Us</button>
                     </div>
                 </div>
                 <div className="mt-4 text-center text-gray-500 text-sm">

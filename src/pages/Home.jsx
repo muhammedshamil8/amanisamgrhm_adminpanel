@@ -2,8 +2,10 @@ import Logo from "@/assets/logo.png";
 import AppScreenshot from "@/assets/amani.jpeg";
 import GooglePlay from "@/assets/google-play-badge.png";
 import Footer from "../components/Footer";
+import { useNavigate } from "react-router-dom";
 
 function App() {
+    const navigate = useNavigate();
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
@@ -11,13 +13,13 @@ function App() {
         <div className="container mx-auto px-4 flex justify-between items-center">
           <img src={Logo} alt="Qurhan Logo" className="h-10" />
           <nav className="hidden md:flex space-x-6">
-            <a href="#features" className="text-gray-600 hover:text-blue-500">
+            <a href="#features" className="text-gray-600 hover:text-blue-500 cursor-pointer">
               Features
             </a>
-            <a href="#download" className="text-gray-600 hover:text-blue-500">
+            <a href="#download" className="text-gray-600 hover:text-blue-500 cursor-pointer">
               Download
             </a>
-            <a href="#contact" className="text-gray-600 hover:text-blue-500">
+            <a onClick={() => navigate('/privacy-policy')} className="text-gray-600 hover:text-blue-500 cursor-pointer">
               Contact
             </a>
           </nav>
@@ -58,30 +60,31 @@ function App() {
         </section>
 
         <section id="features" className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6">
-            Key Features
-          </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="font-semibold text-lg mb-2">Complete Quran</h3>
-              <p className="text-gray-600">
-                Read and listen to the entire Holy Quran with translations.
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="font-semibold text-lg mb-2">Prayer Times</h3>
-              <p className="text-gray-600">
-                Accurate prayer times based on your location.
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="font-semibold text-lg mb-2">Bookmarks</h3>
-              <p className="text-gray-600">
-                Save your favorite verses and track your progress.
-              </p>
-            </div>
-          </div>
-        </section>
+  <h2 className="text-2xl font-bold text-gray-800 mb-6">
+    Key Features
+  </h2>
+  <div className="grid md:grid-cols-3 gap-6">
+    <div className="bg-white p-6 rounded-lg shadow-sm">
+      <h3 className="font-semibold text-lg mb-2">Complete Quran</h3>
+      <p className="text-gray-600">
+        Access the full Quran with high-quality translations, loaded dynamically from our secure server.
+      </p>
+    </div>
+    <div className="bg-white p-6 rounded-lg shadow-sm">
+      <h3 className="font-semibold text-lg mb-2">Play Quran Audio</h3>
+      <p className="text-gray-600">
+        Stream Quran recitations from renowned Qaris directly from our backend server — even while browsing verses.
+      </p>
+    </div>
+    <div className="bg-white p-6 rounded-lg shadow-sm">
+      <h3 className="font-semibold text-lg mb-2">Bookmarks & Progress</h3>
+      <p className="text-gray-600">
+        Bookmark your favorite Ayahs, and continue from where you left off — all synced across your devices.
+      </p>
+    </div>
+  </div>
+</section>
+
       </main>
 
       {/* Footer */}
