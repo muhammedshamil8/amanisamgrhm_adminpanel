@@ -19,7 +19,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="mt-4 text-center text-gray-500 text-sm">
-                    © {new Date().getFullYear()} Qurhan App. All rights reserved.
+                    © {new Date().getFullYear()} bliss.apps All rights reserved.
                 </div>
             </div>
         </footer>
