@@ -37,18 +37,19 @@ function App() {
               The complete solution for your Quranic studies and daily prayers.
               Access anytime, anywhere with our mobile application.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 rounded overflow-hidden">
               <a
                 href="https://play.google.com/store/apps/details?id=com.appletsolution.amanisamgraham"
-                className=" text-white  rounded-lg text-center transition p-0 m-0 h-20 relative"
+                className="block w-full sm:w-auto max-w-xs"
               >
                 <img
                   src={GooglePlay}
                   alt="Download on Google Play"
-                  className=" p-0 m-0 w-full h-full object-cover rounded-lg"
+                  className="w-full h-auto object-contain rounded-lg"
                 />
               </a>
             </div>
+
           </div>
           <div className="md:w-1/2">
             <img
